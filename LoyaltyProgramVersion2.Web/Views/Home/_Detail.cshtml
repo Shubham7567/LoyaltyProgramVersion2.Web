@@ -1,0 +1,17 @@
+﻿@model LoyaltyProgramVersion2.BLL.Operations.CountryOperator
+
+<div>
+    <h4>CountryOperator</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model => model.CountryID)
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>

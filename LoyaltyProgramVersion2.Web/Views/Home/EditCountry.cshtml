@@ -1,0 +1,31 @@
+﻿@model LoyaltyProgramVersion2.BLL.Operations.CountryOperator
+
+@{
+    ViewBag.Title = "EditCountry";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EditCountry</h2>
+
+
+@if (!String.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="bg-danger">
+        <span class="text-white">
+            Message : @ViewBag.ErrorMessage
+        </span>
+    </div>
+}
+<div class="card">
+    <div class="card-header">
+        <h2>AddCountry</h2>
+    </div>
+    <div class="card-body">
+        <form method="post">
+
+            @Html.AntiForgeryToken()
+
+            @Html.Partial("View")
+        </form>
+    </div>
+</div>
